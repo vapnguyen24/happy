@@ -1,46 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    line-height: 1.5;
 }
-
 body {
-    background-color: #000;
-    overflow: hidden;
-    height: 100vh;
+
+    font-weight: normal;
 }
 
-i {
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 20px 15px 5px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left img, .right ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.right ul li {
+    margin-left: 20px;
+
+}
+
+section.title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.mail_come {
     position: absolute;
-    height: 200px;
-    background: linear-gradient(transparent, #fff);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    animation: animate 5s linear infinite;
+    left: 115px;
+    bottom: 5px;
+    font-size: 11px;
+    background-color: rgb(238, 238, 238);
+    padding: 3px 5px;
+    border-radius: 4px;
 }
 
-i:nth-child(3n + 1) {
-    background: linear-gradient(transparent, rgb(108, 207, 174));
+.icon_star {
+    width: 20px;
+    height: 20px;
 }
 
-i:nth-child(3n + 2) {
-    background: linear-gradient(transparent, rgb(42, 73, 211));
+section.send {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-i:nth-child(3n + 3) {
-    background: linear-gradient(transparent, #f00);
+.send div:first-child {
+    display: flex;
+    
+
+}
+
+.user__img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user__img img {
+
+}
+.user__name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user__name--first {
+    display: flex;
+    align-items: center;
+    
+}
+.user__name--first > span {
+    font-size: 14px;
 }
 
 
 
+.user__name--first > span:last-child {
+    margin-left: 2px;
+    color: rgb(158, 158, 158);
+    position: relative;
+    height: 16px;
 
-
-@keyframes animate {
-    0% {
-        transform: translateY(-200px);
-    }
-
-    100% {
-        transform: translateY(calc(100vh + 200px));
-    }
 }
+
+.user__name--first > span:last-child i{
+    position: absolute;
+    top: 15;
+}
+
+.user__icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__icon img{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.user__icon img:first-child{
+    margin-right: 15px;
+}
+
+article {
+    margin-top: 15px;
+}
+
+.note {
+    color: rgb(225, 7, 28);
+    font-weight: 500;
+    opacity: .7 ;
+}
+
+.content__first {
+    margin-top: 10px;
+    
+}
+
+.content__first--title {
+    margin-left: 40px;
+    font-weight: 500;
+    
+}
+.content__first--title span {
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+.content__frist--link {
+    margin-left: 40px;
+    color: rgb(99, 140, 227);
+    font-weight: 500;
+    opacity: .8;
+    text-decoration: underline;
+}
+
+.content__first--content {
+    font-weight: 500;
+    text-decoration: none;
+    font-style: italic;
+}
+.content__first--content {
+    font-style: normal;
+}
+
+.content__first--content span{
+    font-weight: bold;
+    color: rgb(249, 3, 0);
+
+}
+
+.content__sec {
+    margin-top: 10px;
+}
+
+.note__p2{
+    color: red;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+    width: 45px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -2px 1px rgb(233, 233, 233);
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+}
+
+
+footer ul li i{
+    font-size: 20px;
+    
+}
+
+
+
